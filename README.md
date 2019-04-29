@@ -1,3 +1,5 @@
 # learningproject
 Practice DS
-Spring Project
+Spring Boot Project
+Java Conecepts
+Design Patterns
