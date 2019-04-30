@@ -3,7 +3,7 @@ package com.project.create.practice.linkedlist;
 public class LinkedListOps {
 
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList2 list = new LinkedList2();
         list.add(1);
         list.add(2);
         list.add(5);
@@ -23,11 +23,11 @@ public class LinkedListOps {
 
 }
 
-class LinkedList<T> {
+class LinkedList2<T> {
 
     private Node head;
 
-    public LinkedList() {
+    public LinkedList2() {
         this.head = null;
     }
 

@@ -3,7 +3,7 @@ package com.project.create.practice;
 public class LinkedListOps {
 
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList2 list = new LinkedList2();
         list.add(1);
         list.add(2);
         list.add(3);
@@ -12,18 +12,18 @@ public class LinkedListOps {
         list.printList();
         System.out.println();
 
-        list.setHead(list.reverse(list.getHead()));
-
-        list.printList();
+        //list.setHead(list.reverse(list.getHead()));
+        list.checkPallen();
+        //list.printList();
     }
 
 }
 
-class LinkedList<T> {
+class LinkedList2<T> {
 
     private Node head;
 
-    public LinkedList() {
+    public LinkedList2() {
         this.head = null;
     }
 
@@ -59,7 +59,26 @@ class LinkedList<T> {
 
     }
 
-    public void pallen
+    public boolean checkPallen() {
+
+        Node slow, fast;
+        slow = fast = head;
+
+        while (fast.getNext() != null && fast.getNext().getNext() != null) {
+            slow = slow.getNext();
+            fast = fast.getNext().getNext();
+        }
+
+        System.out.println("Mid slow :" + slow.getData());
+
+        Node head2 = reverse(slow.getNext());
+
+        this.printList();
+
+        //System.out.println(head2.getData());
+        return true;
+    }
+
 
     public Node reverse(Node node){
 
