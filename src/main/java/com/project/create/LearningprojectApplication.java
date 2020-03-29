@@ -1,6 +1,6 @@
 package com.project.create;
 
-import org.springframework.boot.SpringApplication;
+/*import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -12,4 +12,4 @@ public class LearningprojectApplication {
 		System.out.println("hello");
 	}
 
-}
+}*/
