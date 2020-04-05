@@ -1,4 +1,4 @@
-package com.project.create.practice.linkedlist;
+package com.project.practice.linkedlist;
 
 public class LinkedListOps {
 

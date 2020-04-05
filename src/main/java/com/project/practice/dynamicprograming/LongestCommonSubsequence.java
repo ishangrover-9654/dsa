@@ -1,4 +1,4 @@
-package com.project.create.practice.dynamicprograming;
+package com.project.practice.dynamicprograming;
 
 public class LongestCommonSubsequence {
 

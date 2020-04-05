@@ -1,7 +1,6 @@
-package com.project.create.practice.multithreading;
+package com.project.practice.multithreading;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class ProdCons {
 

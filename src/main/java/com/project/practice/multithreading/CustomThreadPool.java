@@ -1,8 +1,5 @@
-package com.project.create.practice.multithreading;
+package com.project.practice.multithreading;
 
-import jdk.nashorn.internal.ir.Block;
-
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.atomic.AtomicBoolean;

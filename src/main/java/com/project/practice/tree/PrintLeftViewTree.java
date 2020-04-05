@@ -1,4 +1,4 @@
-package com.project.create.practice.tree;
+package com.project.practice.tree;
 
 class Node
 {

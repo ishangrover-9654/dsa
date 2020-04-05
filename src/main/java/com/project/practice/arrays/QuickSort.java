@@ -1,4 +1,4 @@
-package com.project.create.practice.arrays;
+package com.project.practice.arrays;
 
 public class QuickSort {
 
