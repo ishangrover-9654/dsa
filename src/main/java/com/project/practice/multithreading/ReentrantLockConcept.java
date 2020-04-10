@@ -1,8 +1,5 @@
 package com.project.practice.multithreading;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -49,7 +46,7 @@ class OddEvenImpl {
      * ODD Block
      */
     public void printOdd() throws InterruptedException {
-        while(counter <= 10) {
+        while(counter < 10) {
             try {
                 // Getting lock for ODD block
                 aLock.lock();
