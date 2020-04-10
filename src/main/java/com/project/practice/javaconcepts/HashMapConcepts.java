@@ -58,8 +58,6 @@ public class HashMapConcepts {
         log.info("Sorted Map by Key {}", sortedKeyMap);
         log.info("Sorted Map by value {}", sortedValueMap);
     }
-
-    
 }
 
 @Getter @Setter @AllArgsConstructor
