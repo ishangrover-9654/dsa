@@ -8,12 +8,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.inject.Inject;
+
 @RestController
 @RequestMapping("/entities")
 @Slf4j
 public class RestCrudController {
 
-    @Autowired
+    @Inject //or Autowired
     CrudService crudService;
 
     @GetMapping("/{id}")

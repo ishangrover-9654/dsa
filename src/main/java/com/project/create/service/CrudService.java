@@ -3,16 +3,14 @@ package com.project.create.service;
 
 import com.project.create.model.SampleEntity;
 import com.project.create.repository.SampleCrudRepository;
-import javassist.tools.rmi.Sample;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
+import javax.inject.Inject;
 
 @Service
 public class CrudService {
 
-    @Autowired
+    @Inject
     SampleCrudRepository sampleCrudRepository;
 
     public void getEntities(){
