@@ -1,6 +1,6 @@
 # learningproject
 Practice DS
 Spring Boot Project
-Java Conecepts
+Java Concepts
 Design Patterns
-Jenkins
+Jenkins test
