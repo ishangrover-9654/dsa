@@ -1,4 +1,4 @@
-package com.project.practice.arrays.leetcode;
+package com.project.practice.leetcode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,26 +10,26 @@ import java.util.List;
  */
 public class GenerateParanthesis {
 
-    public static final int MAX = 2;
     public static void main(String[] args) {
-        generate();
+        generate(3);
     }
 
-    public static void generate(){
+    public static void generate(int n){
         List<String> result = new ArrayList<>();
-        backtrack(result,"", 0,0);
+        backtrack(result,"", 0,0, n);
         result.forEach(System.out::println);
     }
 
-    public static void backtrack(List<String> result, String cur, int open, int close){
-        if (cur.length() == MAX*2){
+    public static void backtrack(List<String> result,
+                                 String cur, int open, int close, int max){
+        if (cur.length() == max*2){
             result.add(cur);
             return;
         }
 
-        if ( open < MAX )
-            backtrack(result, cur + "(", open + 1, close);
+        if ( open < max )
+            backtrack(result, cur + "(", open + 1, close, max);
         if ( close < open)
-            backtrack(result, cur + ")", open, close  + 1);
+            backtrack(result, cur + ")", open, close  + 1, max);
     }
 }
