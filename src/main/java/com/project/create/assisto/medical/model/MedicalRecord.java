@@ -7,10 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
-@Document
-@AllArgsConstructor @Getter @Setter @NoArgsConstructor
-public class ProblemsTag {
+@Document @Getter @Setter @AllArgsConstructor @NoArgsConstructor
+public class MedicalRecord {
+
     @Id
-    private String id;
-    private String name;
+    String id;
+
+    private String medRecordName;
+    private String treatCenter;
+
+
 }
