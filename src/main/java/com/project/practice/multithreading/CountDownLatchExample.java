@@ -62,7 +62,7 @@ class NetworkHealthChecker extends BaseHealthChecker{
 
     @Override
     public void verifyService() throws InterruptedException {
-        System.out.println("Checking "+getServiceName());
+        System.out.println("Checking Network Service health");
         Thread.sleep(5000);
         System.out.println(getServiceName()+" Health is fine...");
         getCountDownLatch().countDown();
@@ -78,8 +78,8 @@ class ApplicationHealthChecker extends BaseHealthChecker{
 
     @Override
     public void verifyService() throws InterruptedException {
-        System.out.println("Checking "+getServiceName());
-        Thread.sleep(5000);
+        System.out.println("Checking Application Service health");
+        Thread.sleep(3000);
         System.out.println(getServiceName()+" Health is fine...");
         getCountDownLatch().countDown();
     }
