@@ -23,6 +23,14 @@ public class ComparatorJava8 {
         Comparator<CusEntity> comp2 = Comparator.comparing(CusEntity::getId);
 
         list.sort(comp);
+
+
+    }
+
+    public void soem(){
+        synchronized (this) {
+
+        }
     }
 }
 

@@ -3,6 +3,10 @@ package com.project.practice.javaconcepts;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Better example
+ * https://codepumpkin.com/immutable-class-with-mutable-member-fields-in-java/
+ */
 public class ImmutableTest {
     public static void main(String[] args) {
         Address address = new Address("Hobitton", "Shire");
@@ -19,12 +23,14 @@ public class ImmutableTest {
 
         Address hobbitAddress = hobbit.getAddress();
 
+
         List<String> hobbitStuff = hobbit.getStuff();
         hobbitStuff.remove("Ring of Power");
         hobbitStuff.remove("Sword");
 
         System.out.println();
-        System.out.println("Immutability has been hacked!");
+        //System.out.println("Immutability has been hacked!"); if getStuff returns stuff
+        // Instead of new ArrayList
         System.out.println();
 
         System.out.println("Hobbit country: " + hobbit.getAddress().getCountry());
@@ -42,7 +48,8 @@ final class Hobbit {
     public Hobbit(String name, Address address, List<String> stuff) {
         this.name = name;
         this.address = new Address(address.getCountry(), address.getCity());
-        this.stuff = new ArrayList<>(stuff);
+        //this.stuff = new ArrayList<>(stuff);
+        this.stuff =  stuff;
     }
 
     // getters:
@@ -56,6 +63,7 @@ final class Hobbit {
 
     public List<String> getStuff() {
         return new ArrayList<>(stuff);
+        //return stuff;
     }
 }
 
