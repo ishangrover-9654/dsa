@@ -1,6 +1,5 @@
 package com.project.practice.linkedlist;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

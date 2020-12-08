@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -27,7 +28,7 @@ public class HashMapConcepts {
 
     public static void listToMapJava8ops(List<Entity> list){
 
-        /*
+
         //Key - Id, value - entity
         Map<Integer, Entity> map = list.stream().collect(Collectors.toMap(Entity::getId, entity -> entity));
 
@@ -40,7 +41,7 @@ public class HashMapConcepts {
         //Same as above Using Lambda Expression
         Map<Integer, String> map4 = list.stream().
                 collect(Collectors.toMap(entity -> entity.getId(), entity -> entity.getName()));
-*/
+
         //Manage Duplicates with preserve order
         Map<Integer, String> map5 =  list.stream().collect(Collectors.toMap(Entity::getId, Entity::getName,
                 (oldValue, newValue) -> newValue , LinkedHashMap::new));
