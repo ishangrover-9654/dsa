@@ -6,8 +6,6 @@ public class MinDepth {
     }
 
     public int minDepth(TreeNode root){
-        int minDepth = Integer.MAX_VALUE;
-
         if (root == null) {
             return 0;
         }
@@ -16,13 +14,13 @@ public class MinDepth {
             return 1;
         }
 
-        if (root.left!=null)
-            minDepth= Math.min(minDepth(root.left), minDepth);
+        if (root.left==null)
+            return  minDepth(root.right) + 1;
 
-        if (root.right!=null)
-            minDepth = Math.min(minDepth(root.right) , minDepth);
+        if (root.right==null)
+            return minDepth(root.left) + 1;
 
-        return minDepth + 1;
+        return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
 
     }
 }
