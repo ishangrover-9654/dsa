@@ -1,6 +1,5 @@
 package com.project.practice.leetcode.trees;
 
-import sun.reflect.generics.tree.Tree;
 
 public class MaxDepth {
     public static void main(String[] args) {

@@ -1,8 +1,5 @@
 package com.project.practice.linkedlist;
 
-
-import sun.awt.image.ImageWatched;
-
 public class MergeSortLinkedList {
     public static void main(String[] args) {
 
